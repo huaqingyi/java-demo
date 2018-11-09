@@ -2,11 +2,9 @@ package com.example.controller;
 
 import com.example.model.User;
 import com.example.service.UserService;
+import io.swagger.annotations.ApiParam;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -26,7 +24,10 @@ public class TestController {
 
     @RequestMapping(path = "user",method = RequestMethod.GET)
     @ResponseBody
-    public List<User> user(){
+    public List<User> user(
+            @ApiParam(value = "id",required = false) @RequestParam(value = "id",required = false) Integer id
+    ) throws Exception{
+        System.out.println(id);
         return this.userService.all();
     }
 }

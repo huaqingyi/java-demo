@@ -1,3 +1,10 @@
 D:\test\src\main\java\com\example\controller\TestController.java
+D:\test\src\main\java\com\example\service\impl\UserServiceImpl.java
+D:\test\src\main\java\com\example\config\MyBatisConfiguration.java
+D:\test\src\main\java\com\example\config\Swagger2Configuration.java
 D:\test\src\main\java\com\example\Application.java
 D:\test\src\main\java\com\example\config\DruidConfiguration.java
+D:\test\src\main\java\com\example\dao\UserDao.java
+D:\test\src\main\java\com\example\model\User.java
+D:\test\src\main\java\com\example\service\UserService.java
+D:\test\src\main\java\com\example\config\MyBatisMapperScannerConfiguration.java
